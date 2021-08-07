@@ -1,1 +1,1 @@
-## Repository for feature implementation exercises
+## Repository for feature practice
