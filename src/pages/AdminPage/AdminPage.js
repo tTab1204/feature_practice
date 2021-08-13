@@ -18,6 +18,8 @@ function AdminPage() {
   const [checkedObject, setCheckedObject] = useState({});
 
   useEffect(() => {
+    // 초기 데이터를 넣어두기 위해 만들었습니다. 테스트 시에는 주석처리 해주세요.
+    // localStorage.setItem('userData', JSON.stringify(testData));
     initSelected(JSON.parse(localStorage.getItem('userData')));
   }, []);
 
