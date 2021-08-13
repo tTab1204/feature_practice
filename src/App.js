@@ -6,7 +6,7 @@ import PaginationPage from './pages/PaginationPage/PaginationPage';
 const App = () => {
   return (
     <div>
-      <Route exact path="/admin" component={AdminPage}></Route>
+      <Route exact path="/" component={AdminPage}></Route>
       <Route path="/pagination" component={PaginationPage}></Route>
     </div>
   );
