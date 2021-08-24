@@ -3,4 +3,5 @@ export const ROUTES = {
   PAGINATION: '/pagination',
   ADMIN: '/admin',
   REGISTER: '/register',
+  DRAGANDDROP: '/drag-and-drop',
 };
