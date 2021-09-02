@@ -45,7 +45,7 @@ const DesignPage = () => {
     <Container>
       {/* Toggle */}
       <ToggleContainer>
-        <Toggle>
+        <Toggle onToggle={onToggle}>
           <input type="checkbox" onClick={onHandleToggle} />
         </Toggle>
         <Text onToggle={onToggle}>{onToggle ? 'Checked' : 'Unchecked'}</Text>
