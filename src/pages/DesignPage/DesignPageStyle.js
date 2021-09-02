@@ -217,7 +217,7 @@ export const Toggle = styled.div`
     position: relative;
     height: 100%;
     width: 100%;
-    background: #dde1e7;
+    background: ${({ onToggle }) => (onToggle ? 'lightblue' : '#dde1e7;')};
     outline: none;
     -webkit-appearance: none;
     border-radius: 25px;
