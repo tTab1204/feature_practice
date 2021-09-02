@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import {
   Button,
   ButtonWrapper,
+  CardWrapper,
   Container,
   ImgArea,
   ImgAreaWrapper,
@@ -10,15 +11,16 @@ import {
   InnerArea,
   SocialIcons,
   Title,
-  Wrapper,
+  Toggle,
+  ToggleContainer,
   Writer,
+  Text,
 } from './DesignPageStyle';
 import {
   GoogleOutlined,
   InstagramOutlined,
   LinkedinOutlined,
   GithubOutlined,
-  LikeOutlined,
   EyeOutlined,
   HeartOutlined,
   HeartFilled,
@@ -29,14 +31,34 @@ import react_logo from 'assets/React.png';
 
 const DesignPage = () => {
   const [isClicked, setIsClicked] = useState(false);
+  const [onToggle, setOnToggle] = useState(false);
 
   const onHandleClick = () => {
     setIsClicked(!isClicked);
   };
 
+  const onHandleToggle = () => {
+    setOnToggle(!onToggle);
+  };
+
   return (
     <Container>
-      <Wrapper>
+      {/* Toggle */}
+      <ToggleContainer>
+        <Toggle>
+          <input type="checkbox" onClick={onHandleToggle} />
+        </Toggle>
+        <Text onToggle={onToggle}>{onToggle ? 'Checked' : 'Unchecked'}</Text>
+      </ToggleContainer>
+
+      {/* Button */}
+      <ButtonWrapper>
+        <Button className="button1">Button1</Button>
+        <Button className="button2">Button2</Button>
+      </ButtonWrapper>
+
+      {/* Card */}
+      <CardWrapper>
         <ImgAreaWrapper>
           <ImgArea>
             <InnerArea>
@@ -87,7 +109,7 @@ const DesignPage = () => {
             <span>14 views</span>
           </InformationWrapper>
         </InformationContainer>
-      </Wrapper>
+      </CardWrapper>
     </Container>
   );
 };

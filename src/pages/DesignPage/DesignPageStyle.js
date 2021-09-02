@@ -7,7 +7,7 @@ export const Container = styled.div`
   min-height: 100vh;
   background: #ecf0f3;
 `;
-export const Wrapper = styled.div`
+export const CardWrapper = styled.div`
   padding: 30px;
   width: 350px;
   display: flex;
@@ -121,27 +121,27 @@ export const SocialIcons = styled.div`
 
 export const ButtonWrapper = styled.div`
   display: flex;
-  width: 100%;
-  justify-content: space-between;
+  flex-direction: column;
 
-  & > .like {
+  & > .button1 {
     margin-right: 10px;
   }
 
-  & > .views {
-    margin-left: 10px;
+  & > .button2 {
+    margin-right: 10px;
   }
 `;
 
 export const Button = styled.button`
   position: relative;
-  width: 100%;
+  width: 80px;
   padding: 12px 0;
   font-size: 17px;
   font-weight: 400;
   border-radius: 5px;
   cursor: pointer;
   color: #31344b;
+  margin-bottom: 2rem;
   z-index: 4;
 
   background: #ecf0f3;
@@ -195,4 +195,63 @@ export const InformationWrapper = styled.div`
   & > span {
     margin-left: 3px;
   }
+`;
+
+export const ToggleContainer = styled.div`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 300px;
+  background: #dde1e7;
+  border-radius: 5px;
+  box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
+  margin-right: 40px;
+`;
+
+export const Toggle = styled.div`
+  height: 40px;
+  width: 100px;
+
+  & > input {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: #dde1e7;
+    outline: none;
+    -webkit-appearance: none;
+    border-radius: 25px;
+    box-shadow: -8px -4px 8px 0px #ffffff73,
+      8px 4px 12px 0px rgba(94, 104, 121, 0.288),
+      inset -4px -4px 4px 0px #ffffff73,
+      inset 4px 4px 4px 0px rgba(94, 104, 121, 0.288);
+  }
+
+  & > input:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background: #dde1e7;
+    transition: left 0.2s ease;
+
+    border-radius: 50%;
+    box-shadow: -8px -4px 8px 0px #ffffff73,
+      8px 4px 12px 0px rgba(94, 104, 121, 0.288);
+  }
+
+  & > input:checked:before {
+    left: 60px;
+    box-shadow: -8px -4px 8px 0px #ffffff73;
+  }
+`;
+
+export const Text = styled.div`
+  margin-left: 20px;
+  font-size: 20px;
+  letter-spacing: 0.2px;
+
+  color: ${({ onToggle }) => (onToggle ? 'green' : '')};
 `;
