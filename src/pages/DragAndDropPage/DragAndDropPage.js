@@ -18,12 +18,6 @@ const DragAndDropPage = () => {
             <p>Card two</p>
           </Card>
         </Board>
-
-        <Board id="board-3" className="board">
-          <Card id="card-3" className="card" draggable="true">
-            <p>Card three</p>
-          </Card>
-        </Board>
       </main>
     </div>
   );
