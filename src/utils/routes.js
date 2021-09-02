@@ -4,4 +4,5 @@ export const ROUTES = {
   ADMIN: '/admin',
   REGISTER: '/register',
   DRAGANDDROP: '/drag-and-drop',
+  DESIGN: '/design',
 };
