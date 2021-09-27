@@ -211,7 +211,7 @@ export const Toggle = styled.div`
     cursor: pointer;
     height: 100%;
     width: 100%;
-    background: ${({ onToggle }) => (onToggle ? 'lightblue' : '#dde1e7;')};
+    background: ${({ onToggle }) => (onToggle ? 'lightblue' : '#dde1e7')};
     outline: none;
     -webkit-appearance: none;
     border-radius: 25px;
