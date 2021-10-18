@@ -1,3 +1,9 @@
 ## 기능 구현 연습용 repository
 
-1. Dropdown 컴포넌트 만들기 (neumorphism design): 참조 PR: https://github.com/tTab1204/feature_practice/pull/14
+- [x] Dropdown 컴포넌트 만들기 (neumorphism design)
+- [x] Toggle UI 만들기
+- [x] Neumorphism Card 만들기
+- [x] Drag & Drop 기능 만들기
+- [x] 회원가입 유효성 검사 기능 구현하기
+- [x] Customed Checkbox 컴포넌트 만들기
+- [x] Color Flipper 만들기 (Vanilla JS)
