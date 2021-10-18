@@ -7,3 +7,4 @@
 - [x] 회원가입 유효성 검사 기능 구현하기
 - [x] Customed Checkbox 컴포넌트 만들기
 - [x] Color Flipper 만들기 (Vanilla JS)
+- [x] Vanilla JS로 상태관리 구현
